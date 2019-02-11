@@ -32,6 +32,8 @@
         top: 1cm;
         left: 1cm;
         z-index: 2;
+        font-size: 14px;
+        font-weight: normal!important;
     }
     .image {
         position: absolute;
@@ -64,7 +66,7 @@
     <div class="buttons">
         <label style="cursor: pointer; padding: 5px 10px; background-color: #000000; color: #ffff;" for="input">Add photo</label>
         <input id="input" style="display: none;" type="file" name='file' onchange="readUrl(event)">
-        <button id="print">Print</button>
+        <button style="border: 0; cursor: pointer; padding: 5px 10px; background-color: #000000; color: #ffff;" id="print">Print</button>
     </div>
     <img class="bg" src="lviv post.png">
     <div class="image">
