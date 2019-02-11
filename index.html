@@ -64,6 +64,7 @@
     <div class="buttons">
         <label style="cursor: pointer; padding: 5px 10px; background-color: #000000; color: #ffff;" for="input">Add photo</label>
         <input id="input" style="display: none;" type="file" name='file' onchange="readUrl(event)">
+        <button id="print">Print</button>
     </div>
     <img class="bg" src="lviv post.png">
     <div class="image">
@@ -71,6 +72,9 @@
     </div>
 
     <script>
+        document.getElementById('print').addEventListener('click', function() {
+            window.print();
+        })
         function readUrl(event) {
             if (event.target.files && event.target.files[0]) {
                 let reader = new FileReader();
